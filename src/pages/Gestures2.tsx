@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DefaultBox, Wrapper } from "./VariantsBasic";
+import { DefaultBox, DefaultWrapper } from "./VariantsBasic";
 import { useRef } from "react";
 
 const Box = styled(DefaultBox)`
@@ -20,7 +20,7 @@ const BiggerBox = styled.div`
 export default function Gestures2() {
   const biggerBoxRef = useRef<HTMLDivElement>(null);
   return (
-    <Wrapper>
+    <DefaultWrapper>
       <Box
         drag
         whileDrag={{
@@ -52,8 +52,11 @@ export default function Gestures2() {
           dragConstraints={biggerBoxRef}
           dragSnapToOrigin
           dragElastic={1}
+          whileDrag={{
+            backgroundColor: "rgb(95, 39, 205)",
+          }}
         />
       </BiggerBox>
-    </Wrapper>
+    </DefaultWrapper>
   );
 }

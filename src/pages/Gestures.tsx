@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DefaultBox, Wrapper } from "./VariantsBasic";
+import { DefaultBox, DefaultWrapper } from "./VariantsBasic";
 
 const Box = styled(DefaultBox)``;
 
@@ -10,12 +10,12 @@ const boxVariants = {
 
 export default function Gestures() {
   return (
-    <Wrapper>
+    <DefaultWrapper>
       {/* <Box
         whileHover={{ scale: 1.5, rotateZ: 90 }}
         whileTap={{ scale: 1, borderRadius: "100px" }}
       /> */}
       <Box variants={boxVariants} whileHover={"hover"} whileTap={"click"} />
-    </Wrapper>
+    </DefaultWrapper>
   );
 }

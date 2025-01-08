@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Wrapper } from "./VariantsBasic";
+import { Link } from "react-router-dom";
+import { DefaultWrapper } from "./VariantsBasic";
 
-const HomeWrapper = styled(Wrapper)`
+const HomeWrapper = styled(DefaultWrapper)`
   background: rgba(255, 255, 255, 0.4);
 
   div {
@@ -26,6 +26,8 @@ export default function Home() {
         <Link to={"/variants-basic"}>01. Variants Basic</Link>
         <Link to={"/gestures"}>02. Gestures - hover & click</Link>
         <Link to={"/gestures2"}>03. Gestures - drag</Link>
+        <Link to={"/motion-value"}>04. MotionValue - drag</Link>
+        <Link to={"/motion-value2"}>04. MotionValue - scroll</Link>
       </div>
     </HomeWrapper>
   );

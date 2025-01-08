@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const Wrapper = styled.div`
+export const DefaultWrapper = styled(motion.div)`
   width: 100vw;
   height: 100vh;
   display: flex;
   gap: 15px;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 `;
 
 export const DefaultBox = styled(motion.div)`
@@ -66,7 +68,7 @@ const circleVariants = {
 
 export default function VariantsBasic() {
   return (
-    <Wrapper>
+    <DefaultWrapper>
       <Box variants={boxVariants} initial="start" animate="end">
         {/*자식들은 부모의 initial과 animate 값을 상속함*/}
         <Circle variants={circleVariants} />
@@ -74,6 +76,6 @@ export default function VariantsBasic() {
         <Circle variants={circleVariants} />
         <Circle variants={circleVariants} />
       </Box>
-    </Wrapper>
+    </DefaultWrapper>
   );
 }
