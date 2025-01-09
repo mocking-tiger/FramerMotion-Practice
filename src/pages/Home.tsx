@@ -27,7 +27,8 @@ export default function Home() {
         <Link to={"/gestures"}>02. Gestures - hover & click</Link>
         <Link to={"/gestures2"}>03. Gestures - drag</Link>
         <Link to={"/motion-value"}>04. MotionValue - drag</Link>
-        <Link to={"/motion-value2"}>04. MotionValue - scroll</Link>
+        <Link to={"/motion-value2"}>05. MotionValue - scroll</Link>
+        <Link to={"/svg"}>06. SVG Animation</Link>
       </div>
     </HomeWrapper>
   );
