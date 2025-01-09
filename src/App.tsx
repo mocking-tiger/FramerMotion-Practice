@@ -1,4 +1,5 @@
 import AnimatePresenceComponent from "./pages/AnimatePresence";
+import AnimatePresenceComponent2 from "./pages/AnimatePresence2";
 import Gestures from "./pages/Gestures";
 import Gestures2 from "./pages/Gestures2";
 import Home from "./pages/Home";
@@ -22,6 +23,10 @@ function App() {
         <Route
           path="/animate-presence"
           element={<AnimatePresenceComponent />}
+        />
+        <Route
+          path="/animate-presence2"
+          element={<AnimatePresenceComponent2 />}
         />
       </Routes>
     </BrowserRouter>
