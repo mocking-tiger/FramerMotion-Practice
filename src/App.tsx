@@ -1,3 +1,4 @@
+import AnimatePresenceComponent from "./pages/AnimatePresence";
 import Gestures from "./pages/Gestures";
 import Gestures2 from "./pages/Gestures2";
 import Home from "./pages/Home";
@@ -18,6 +19,10 @@ function App() {
         <Route path="/motion-value" element={<MotionValue />} />
         <Route path="/motion-value2" element={<MotionValue2 />} />
         <Route path="/svg" element={<SvgAnimation />} />
+        <Route
+          path="/animate-presence"
+          element={<AnimatePresenceComponent />}
+        />
       </Routes>
     </BrowserRouter>
   );

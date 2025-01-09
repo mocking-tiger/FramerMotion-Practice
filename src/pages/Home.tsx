@@ -29,6 +29,7 @@ export default function Home() {
         <Link to={"/motion-value"}>04. MotionValue - drag</Link>
         <Link to={"/motion-value2"}>05. MotionValue - scroll</Link>
         <Link to={"/svg"}>06. SVG Animation</Link>
+        <Link to={"/animate-presence"}>07. Animate presence</Link>
       </div>
     </HomeWrapper>
   );
