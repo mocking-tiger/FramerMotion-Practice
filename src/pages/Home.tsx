@@ -32,6 +32,7 @@ export default function Home() {
         <Link to={"/animate-presence"}>07. Animate presence - basic</Link>
         <Link to={"/animate-presence2"}>08. Animate presence - slider</Link>
         <Link to={"/layout-animation"}>09. Layout Animation</Link>
+        <Link to={"/layout-animation2"}>10. Layout Animation2</Link>
       </div>
     </HomeWrapper>
   );

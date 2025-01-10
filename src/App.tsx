@@ -9,6 +9,7 @@ import SvgAnimation from "./pages/SvgAnimation";
 import Layout from "./pages/Layout";
 import VariantsBasic from "./pages/VariantsBasic";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout2 from "./pages/Layout2";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           element={<AnimatePresenceComponent2 />}
         />
         <Route path="/layout-animation" element={<Layout />} />
+        <Route path="/layout-animation2" element={<Layout2 />} />
       </Routes>
     </BrowserRouter>
   );
