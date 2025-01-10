@@ -31,6 +31,7 @@ export default function Home() {
         <Link to={"/svg"}>06. SVG Animation</Link>
         <Link to={"/animate-presence"}>07. Animate presence - basic</Link>
         <Link to={"/animate-presence2"}>08. Animate presence - slider</Link>
+        <Link to={"/layout-animation"}>09. Layout Animation</Link>
       </div>
     </HomeWrapper>
   );

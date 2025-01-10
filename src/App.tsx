@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import MotionValue from "./pages/MotionValue";
 import MotionValue2 from "./pages/MotionValue2";
 import SvgAnimation from "./pages/SvgAnimation";
+import Layout from "./pages/Layout";
 import VariantsBasic from "./pages/VariantsBasic";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -28,6 +29,7 @@ function App() {
           path="/animate-presence2"
           element={<AnimatePresenceComponent2 />}
         />
+        <Route path="/layout-animation" element={<Layout />} />
       </Routes>
     </BrowserRouter>
   );
